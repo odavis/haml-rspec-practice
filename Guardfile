@@ -9,9 +9,7 @@
 # notifications: true                send notifictions to Growl/libnotify/Notifu
 # haml_options: { ugly: true }    pass options to the Haml engine
 
-guard :haml do
-  watch(/^.+(\.html\.haml)$/)
-end
+
 
 guard 'livereload' do
   watch(%r{app/views/.+\.(erb|haml|slim)$})
