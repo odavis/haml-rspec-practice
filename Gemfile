@@ -29,6 +29,15 @@ gem 'spring',        group: :development
 group :development, :test do
   gem 'rspec-rails'
   gem 'selenium-webdriver'
+
+
+  # Guard and Livereload gems
+  gem 'guard'
+  gem 'guard-livereload'
+  gem 'guard-haml'
+  gem 'guard-rspec'
+  # gem 'guard-zeus'
+  gem 'rb-inotify', :require => false
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
