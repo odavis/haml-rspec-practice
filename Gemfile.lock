@@ -75,6 +75,10 @@ GEM
     guard-rspec (4.2.8)
       guard (~> 2.1)
       rspec (>= 2.14, < 4.0)
+    guard-spork (1.5.1)
+      childprocess (>= 0.2.3)
+      guard (>= 1.1)
+      spork (>= 0.8.4)
     haml (4.0.5)
       tilt
     hike (1.2.3)
@@ -165,6 +169,10 @@ GEM
       rubyzip (~> 1.0)
       websocket (~> 1.0.4)
     slop (3.5.0)
+    spork (1.0.0rc4)
+    spork-rails (4.0.0)
+      rails (>= 3.0.0, < 5)
+      spork (>= 1.0rc0)
     spring (1.1.2)
     sprockets (2.11.0)
       hike (~> 1.2)
@@ -199,11 +207,13 @@ PLATFORMS
 
 DEPENDENCIES
   capybara
+  childprocess
   coffee-rails (~> 4.0.0)
   guard
   guard-haml
   guard-livereload
   guard-rspec
+  guard-spork
   haml
   jbuilder (~> 2.0)
   jquery-rails
@@ -213,6 +223,7 @@ DEPENDENCIES
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
   selenium-webdriver
+  spork-rails
   spring
   sqlite3
   turbolinks

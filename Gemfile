@@ -40,6 +40,10 @@ group :development, :test do
   gem 'guard-rspec'
   # gem 'guard-zeus'
   gem 'rb-inotify', :require => false
+
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

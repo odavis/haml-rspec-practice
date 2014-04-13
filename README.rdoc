@@ -1,1 +1,2 @@
-http://ruby.railstutorial.org/chapters/static-pages#sec-static_pages
+Current page
+http://ruby.railstutorial.org/chapters/filling-in-the-layout#top
