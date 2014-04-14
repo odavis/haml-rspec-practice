@@ -1,8 +1,11 @@
+.jumbotron
+  %h1
+    Sample App
+  %h2
+    This is the home page for the
+    %a{:title => 'Rails Tutorial', :href => 'http://railstutorial.org'} Ruby on Rails Tutorial
+    sample application.
 
-%h1
-  Sample App
+    = link_to "Sign up now!", "#", class: "btn btn-lg btn-primary"
 
-%p
-  This is the home page for the
-  %a{:title => 'Rails Tutorial', :href => 'http://railstutorial.org'} Ruby on Rails Tutorial
-  sample application.
+= link_to image_tag("rails.png", alt: "Rails"), 'http://rubyonrails.org/'
