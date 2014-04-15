@@ -1,0 +1,19 @@
+.navbar.navbar-inverse.navbar-fixed-top
+  .container
+    .navbar-header
+      %button.navbar-toggle
+        %span.sr-only
+          Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand#logo{href:'#'}
+        Rails Tutorial
+    .navbar-collapse.collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          = link_to "Home", root_path
+        %li
+          = link_to "Help", help_path
+        %li
+          = link_to "Sign in", '#'

@@ -11,25 +11,7 @@
       src="http://html5shim.googlecode.com/svn/trunk/html5.js"
     <![endif]-->
   %body
-    .navbar.navbar-inverse.navbar-fixed-top
-      .container
-        .navbar-header
-          %button.navbar-toggle
-            %span.sr-only
-              Toggle navigation
-            %span.icon-bar
-            %span.icon-bar
-            %span.icon-bar
-          %a.navbar-brand#logo{href:'#'}
-            Rails Tutorial
-        .navbar-collapse.collapse
-          %ul.nav.navbar-nav.navbar-right
-            %li
-              = link_to "Home", "#"
-            %li>
-              = link_to "About", "#"
-            %li>
-              = link_to "Contact", "#"
-
+    = render 'layouts/header'
     .container
       = yield
+      = render 'layouts/footer'
