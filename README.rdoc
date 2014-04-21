@@ -1,2 +1,0 @@
-Current page
-http://ruby.railstutorial.org/chapters/filling-in-the-layout#sec-partials
