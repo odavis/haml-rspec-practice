@@ -24,6 +24,11 @@ describe "User Pages" do
       it 'should not create a user' do
         expect { click_button 'Create account' }.not_to change(User, :count)
       end
+
+      describe "after submission" do
+        before { click_button 'Create account' }
+        it {should have_content('error')}
+      end
     end
 
     describe 'with valid information' do
@@ -36,6 +41,11 @@ describe "User Pages" do
 
       it 'should create user' do
         expect{ click_button 'Create account' }.to change(User, :count).by(1)
+      end
+
+      describe 'after submission' do
+        before {click_button('Create account')}
+        it {should_not have_content('error')}
       end
     end
   end
