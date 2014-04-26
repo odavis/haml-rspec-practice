@@ -1,6 +1,2 @@
 Current page
-<<<<<<< HEAD
-http://ruby.railstutorial.org/chapters/sign-up#top
-=======
-http://ruby.railstutorial.org/chapters/sign-up#sec-signup_exercises
->>>>>>> sign-up
+http://rails-4-0.railstutorial.org/book/sign_in_out#sec-signin_upon_signup
