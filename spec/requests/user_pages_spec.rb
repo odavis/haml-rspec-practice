@@ -17,6 +17,8 @@ describe "User Pages" do
     it { should have_title(user.name) }
   end
 
+
+
   describe 'signup' do
     before { visit signup_path }
 
@@ -27,7 +29,7 @@ describe "User Pages" do
 
       describe "after submission" do
         before { click_button 'Create account' }
-        it {should have_content('error')}
+        it { should have_content('error') }
       end
     end
 
@@ -46,6 +48,15 @@ describe "User Pages" do
       describe 'after submission' do
         before {click_button('Create account')}
         it {should_not have_content('error')}
+      end
+
+      describe 'after saving the user' do
+        before { click_button 'Create account' }
+        let(:user) { User.find_by_email('user@example.com')}
+
+        it { should have_title(user.name) }
+        it { should have_selector('div.alert.alert-success', text: 'Welcome')}
+        it { should have_link('Sign out')}
       end
     end
   end
